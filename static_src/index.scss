@@ -1,0 +1,97 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/static/fonts/Roboto-Regular-webfont.eot');
+  src: url('/static/fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/static/fonts/Roboto-Regular-webfont.woff') format('woff'),
+  url('/static/fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+  url('/static/fonts/Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: #f3f3f3;
+}
+
+$header-height: 10.2%;
+$side-width: 100px;
+
+.d-flex {
+  display: flex;
+}
+
+#header {
+  background: white;
+  width: 100%;
+  height: $header-height;
+  min-height: 100px;
+  box-shadow: 1px 1px 7px #ababab;
+}
+
+#sidebar {
+  background: white;
+  min-width: $side-width;
+  max-width: $side-width;
+  float: left;
+  height: 100% - $header-height;
+  box-shadow: 1px 5px 7px #ababab;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#root, #react-app {
+  height: 100%;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.content {
+  display: flow-root;
+}
+
+.logo {
+  font-size: 52pt;
+  background-color: #4e67c1;
+  color: white;
+  width: $side-width;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.d-none {
+  display: none;
+}
+
+.components {
+  padding: 5px;
+}
+
+#sidebar .components {
+  height: 92%;
+}
+
+
+.user-avatar {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-avatar > img {
+  width: 40px;
+  border-radius: 20px;
+}
+
